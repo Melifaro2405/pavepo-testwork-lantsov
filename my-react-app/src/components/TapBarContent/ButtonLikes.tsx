@@ -1,7 +1,6 @@
-import HeartIcon from "../../assets/heart-svg.svg?react";
-
-import "./TapBarContent.css";
 import { useState } from "react";
+import HeartSVG from "../SVGComponents/HeartSVG.tsx";
+import "./TapBarContent.css";
 
 function ButtonLikes() {
   const [likesCount, setLikesCount] = useState<number>(28);
@@ -12,7 +11,7 @@ function ButtonLikes() {
 
   return (
     <div className="button-wrapper" onClick={handleUpLikesCount}>
-      <HeartIcon />
+      <HeartSVG />
       <span className="count-wrapper">{likesCount}</span>
     </div>
   );

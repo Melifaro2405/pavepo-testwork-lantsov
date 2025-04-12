@@ -1,6 +1,6 @@
 import { useRef, useState } from "react";
 import CopiedLinkNotification from "../CopiedLinkNotification/CopiedLinkNotification.tsx";
-import ShareIcon from "../../assets/share-icon.svg?react";
+import ShareLinkSVG from "../SVGComponents/ShareLinkSVG.tsx";
 import "./TapBarContent.css";
 
 function ButtonShareLink() {
@@ -41,7 +41,7 @@ function ButtonShareLink() {
 
   return (
     <div className="button-wrapper" onClick={handleSharePage}>
-      <ShareIcon />
+      <ShareLinkSVG />
       {showCopiedNotification && <CopiedLinkNotification />}
     </div>
   );

@@ -1,6 +1,6 @@
-import CommentsIcon from "../../assets/comments-icon.svg?react";
-import "./TapBarContent.css";
 import { useState } from "react";
+import CommentsSVG from "../SVGComponents/CommentsSVG.tsx";
+import "./TapBarContent.css";
 
 function ButtonComments() {
   const [commentsCount, setCommentsCount] = useState<number>(7);
@@ -11,7 +11,7 @@ function ButtonComments() {
 
   return (
     <div className="button-wrapper" onClick={handleUpCommentsCount}>
-      <CommentsIcon />
+      <CommentsSVG />
       <span className="count-wrapper">{commentsCount}</span>
     </div>
   );

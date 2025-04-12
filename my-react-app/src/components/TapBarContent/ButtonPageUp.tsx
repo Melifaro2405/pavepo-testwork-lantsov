@@ -1,4 +1,4 @@
-import PageUpIcon from "../../assets/page-up-icon.svg?react";
+import PageUpSVG from "../SVGComponents/PageUpSVG.tsx";
 import "./TapBarContent.css";
 
 function ButtonShareLink() {
@@ -11,7 +11,7 @@ function ButtonShareLink() {
 
   return (
     <div className="button-wrapper" onClick={handleScrollToStartPage}>
-      <PageUpIcon />
+      <PageUpSVG />
     </div>
   );
 }
