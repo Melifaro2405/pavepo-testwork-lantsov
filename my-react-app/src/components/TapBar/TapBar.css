@@ -1,0 +1,46 @@
+.tapbar {
+    position: fixed;
+    bottom: 0;
+    width: 380px;
+    height: 60px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.1);
+    border-top: 1px solid #eee;
+    transition: transform 0.3s ease-in-out;
+}
+
+.tapbar.hidden {
+    transform: translateY(100%);
+}
+
+.tapbar-button {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    color: #666;
+    background: none;
+    border: none;
+    font-size: 12px;
+    flex: 1;
+    height: 100%;
+    cursor: pointer;
+    padding: 0;
+}
+
+.tapbar-icon {
+    font-size: 20px;
+    margin-bottom: 4px;
+}
+
+.tapbar-button.active {
+    color: #007aff;
+}
+
+/* Дополнительные стили для контента страницы */
+body {
+    padding-bottom: 80px; /* Отступ для тапбара */
+}
