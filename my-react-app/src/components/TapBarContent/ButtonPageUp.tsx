@@ -1,5 +1,5 @@
 import PageUpSVG from "../SVGComponents/PageUpSVG.tsx";
-import "./TapBarContent.css";
+import "./styles.scss";
 
 function ButtonShareLink() {
   const handleScrollToStartPage = () => {

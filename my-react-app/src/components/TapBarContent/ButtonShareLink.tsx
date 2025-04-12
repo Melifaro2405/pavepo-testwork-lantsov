@@ -1,7 +1,7 @@
 import { useRef, useState } from "react";
 import CopiedLinkNotification from "../CopiedLinkNotification/CopiedLinkNotification.tsx";
 import ShareLinkSVG from "../SVGComponents/ShareLinkSVG.tsx";
-import "./TapBarContent.css";
+import "./styles.scss";
 
 function ButtonShareLink() {
   const [showCopiedNotification, setShowCopiedNotification] = useState(false);

@@ -1,7 +1,7 @@
 import Users from "./components/Users/Users.tsx";
 import TapBar from "./components/TapBar/TapBar.tsx";
 import TapBarContent from "./components/TapBarContent/TapBarContent.tsx";
-import "./index.css";
+import "./index.scss";
 
 function App() {
   return (

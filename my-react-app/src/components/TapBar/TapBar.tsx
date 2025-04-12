@@ -1,5 +1,5 @@
 import { useState, useEffect, useRef, ReactNode } from "react";
-import "./TapBar.scss";
+import "./styles.scss";
 
 type TapBarProps = {
   children: ReactNode;

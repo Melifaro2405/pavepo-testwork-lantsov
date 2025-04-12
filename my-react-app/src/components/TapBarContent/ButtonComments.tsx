@@ -1,6 +1,6 @@
 import { useState } from "react";
 import CommentsSVG from "../SVGComponents/CommentsSVG.tsx";
-import "./TapBarContent.css";
+import "./styles.scss";
 
 function ButtonComments() {
   const [commentsCount, setCommentsCount] = useState<number>(7);

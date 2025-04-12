@@ -1,6 +1,6 @@
 import { useState } from "react";
 import HeartSVG from "../SVGComponents/HeartSVG.tsx";
-import "./TapBarContent.css";
+import "./styles.scss";
 
 function ButtonLikes() {
   const [likesCount, setLikesCount] = useState<number>(28);

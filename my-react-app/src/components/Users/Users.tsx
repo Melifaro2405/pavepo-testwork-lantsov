@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import axios from "axios";
-import "./Users.css";
+import "./styles.scss";
 
 type TUser = {
   id: number;
