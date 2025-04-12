@@ -1,8 +1,5 @@
 import { useState, useEffect, useRef, ReactNode } from "react";
-import "./TapBar.css";
-
-const SCROLL_THRESHOLD = 200; // Порог в 200px
-const APPEAR_DELAY = 1000; // 1 секунда задержки
+import "./TapBar.scss";
 
 type TapBarProps = {
   children: ReactNode;
@@ -29,7 +26,7 @@ const TapBar = ({ children }: TapBarProps) => {
       const scrollDistance = currentY - scrollStartY.current;
 
       // Прокрутка вниз более чем на 200px - скрываем
-      if (scrollDown && scrollDistance >= SCROLL_THRESHOLD) {
+      if (scrollDown && scrollDistance >= 200) {
         setHidden(true);
       }
       // Прокрутка вверх - показываем
@@ -47,12 +44,12 @@ const TapBar = ({ children }: TapBarProps) => {
         setHidden(false);
         // После появления сбрасываем начальную позицию для нового отсчета
         scrollStartY.current = window.scrollY;
-      }, APPEAR_DELAY);
+      }, 1000);
 
       lastScrollY.current = currentY;
     };
 
-    window.addEventListener("scroll", handleScroll, { passive: true });
+    window.addEventListener("scroll", handleScroll);
 
     return () => {
       window.removeEventListener("scroll", handleScroll);

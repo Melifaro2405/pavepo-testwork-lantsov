@@ -1,0 +1,20 @@
+.tapbar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 380px;
+    height: 60px;
+    background-color: #fff;
+    opacity: 0.95;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+    padding: 0 20px;
+}
+
+.tapbar.hidden {
+    transform: translateY(100%);
+}

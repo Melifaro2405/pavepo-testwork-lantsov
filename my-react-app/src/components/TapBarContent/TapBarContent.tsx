@@ -1,5 +1,17 @@
+import ButtonShareLink from "./ButtonShareLink.tsx";
+import ButtonPageUp from "./ButtonPageUp.tsx";
+import ButtonComments from "./ButtonComments.tsx";
+import ButtonLikes from "./ButtonLikes.tsx";
+
 function TapBarContent() {
-  return <h2 style={{ color: "black" }}>Tapbar content</h2>;
+  return (
+    <>
+      <ButtonShareLink />
+      <ButtonPageUp />
+      <ButtonComments />
+      <ButtonLikes />
+    </>
+  );
 }
 
 export default TapBarContent;
