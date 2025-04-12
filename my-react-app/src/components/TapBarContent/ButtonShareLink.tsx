@@ -24,6 +24,7 @@ function ButtonShareLink() {
     } catch (err) {
       // Если пользователь отменил шаринг, тоже копируем в буфер
       await navigator.clipboard.writeText(window.location.href);
+      console.error(err);
       showNotification();
     }
   };
